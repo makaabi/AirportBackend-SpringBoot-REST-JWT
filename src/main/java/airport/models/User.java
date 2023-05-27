@@ -27,6 +27,16 @@ public class User {
 	@Size(max = 50)
 	@Email
 	private String email;
+	
+	
+	@NotBlank
+	private String firstName;
+	
+	@NotBlank
+	private String lastName ;
+	
+	@NotBlank
+	private int phoneNumber;
 
 	@NotBlank
 	@Size(max = 120)
@@ -53,6 +63,32 @@ public class User {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public int getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getUsername() {
